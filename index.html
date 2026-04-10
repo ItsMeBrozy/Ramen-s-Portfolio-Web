@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of a professional Game UI Designer specializing in high-quality, immersive game interfaces.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+    <div class="blob-bg"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Ramen<span>UI</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content" data-reveal>
+                <h1>Crafting <span class="gradient-text">Immersive</span> Game Experiences</h1>
+                <p>Professional UI/UX Designer creating high-fidelity interfaces for Roblox and indie games.</p>
+                <div class="hero-btns">
+                    <a href="#work" class="btn primary">View Showcase</a>
+                    <a href="#contact" class="btn secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual" data-reveal="right">
+                <div class="hero-card glass">
+                    <div class="card-inner">
+                        <img src="Images/image-6.png" alt="Featured UI Sample">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work">
+            <div class="section-header">
+                <h2 data-reveal>Featured <span class="gradient-text">Showcase</span></h2>
+                <p data-reveal>Explore my latest user interface designs and game components.</p>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item glass" data-reveal="bottom">
+                    <img src="Images/image-1.png" alt="Light UI Slots">
+                    <div class="overlay">
+                        <h3>Light Slot System</h3>
+                        <span>Modern • Clean</span>
+                    </div>
+                </div>
+                <div class="gallery-item glass" data-reveal="bottom">
+                    <img src="Images/image-2.png" alt="Dark UI Slots">
+                    <div class="overlay">
+                        <h3>Dark Slot System</h3>
+                        <span>Sci-Fi • Textured</span>
+                    </div>
+                </div>
+                <div class="gallery-item glass" data-reveal="bottom">
+                    <img src="Images/image-3.png" alt="Update Log UI">
+                    <div class="overlay">
+                        <h3>Update Log</h3>
+                        <span>Informational • Clean</span>
+                    </div>
+                </div>
+                <div class="gallery-item glass" data-reveal="bottom">
+                    <img src="Images/image-4.png" alt="Modern Shop UI">
+                    <div class="overlay">
+                        <h3>Modern Shop</h3>
+                        <span>Tabs • Interactive</span>
+                    </div>
+                </div>
+                <div class="gallery-item glass" data-reveal="bottom">
+                    <img src="Images/image-5.png" alt="Component Design">
+                    <div class="overlay">
+                        <h3>Sci-Fi Components</h3>
+                        <span>Visual Assets • Polish</span>
+                    </div>
+                </div>
+                <div class="gallery-item glass" data-reveal="bottom">
+                    <img src="Images/image-6.png" alt="Featured Shop">
+                    <div class="overlay">
+                        <h3>Premium Shop UI</h3>
+                        <span>Full Interface • Figma</span>
+                    </div>
+                </div>
+                <div class="gallery-item glass" data-reveal="bottom">
+                    <img src="Images/image-7.png" alt="UI Asset">
+                    <div class="overlay">
+                        <h3>Interface Asset</h3>
+                        <span>Detailing • Glow</span>
+                    </div>
+                </div>
+                <div class="gallery-item glass" data-reveal="bottom">
+                    <img src="Images/Day_4_and_Day_5.png" alt="Daily Progression">
+                    <div class="overlay">
+                        <h3>Progression UI</h3>
+                        <span>Retention • Rewards</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <h2 data-reveal>Creative <span class="gradient-text">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card glass" data-reveal="left">
+                    <div class="icon">🎨</div>
+                    <h3>UI Design</h3>
+                    <p>Creating high-fidelity, polished interfaces with consistent styling.</p>
+                </div>
+                <div class="skill-card glass" data-reveal="bottom">
+                    <div class="icon">✨</div>
+                    <h3>UX Design</h3>
+                    <p>Focusing on player flow, usability, and intuitive navigation.</p>
+                </div>
+                <div class="skill-card glass" data-reveal="right">
+                    <div class="icon">🎮</div>
+                    <h3>Game Engines</h3>
+                    <p>Expertise in implementation within Roblox Studio and external tools.</p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Game UI Portfolio. Built with passion.</p>
+    </footer>
+
+    <!-- Lightbox/Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
